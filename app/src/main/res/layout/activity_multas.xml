@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181302">
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Diario"
+        android:id="@+id/btnMultasDiario"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:background="@drawable/button4"
+        android:textColor="#ffffff"
+        android:textSize="23dp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Semanal"
+        android:id="@+id/btnMultasSemanal"
+        android:layout_below="@+id/btnMultasDiario"
+        android:layout_alignLeft="@+id/btnMultasDiario"
+        android:layout_alignStart="@+id/btnMultasDiario"
+        android:background="@drawable/button4"
+        android:textColor="#ffffff"
+        android:textSize="23dp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Quincenal"
+        android:id="@+id/btnMultasQuincenal"
+        android:layout_below="@+id/btnMultasSemanal"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button4"
+        android:textColor="#ffffff"
+        android:textSize="23dp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Mensual"
+        android:id="@+id/btnMultasMensual"
+        android:layout_below="@+id/btnMultasQuincenal"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button4"
+        android:textSize="23dp"
+        android:textColor="#ffffff" />
+</RelativeLayout>

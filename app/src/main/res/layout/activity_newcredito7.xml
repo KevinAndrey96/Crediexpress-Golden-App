@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="DOCUMENTO"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/credidocu"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="VALOR     .000"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:gravity="center"
+        android:id="@+id/credivalu"
+        android:layout_below="@+id/credidocu"
+        android:layout_alignLeft="@+id/credidocu"
+        android:layout_alignStart="@+id/credidocu"
+        android:layout_toStartOf="@+id/txtanoinicial"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="#CUOTAS"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:gravity="center"
+        android:id="@+id/credicuota"
+        android:layout_below="@+id/credivalu"
+        android:layout_alignLeft="@+id/credivalu"
+        android:layout_alignStart="@+id/credivalu"
+        android:layout_toStartOf="@+id/btnNumerodecuotasprede"
+        android:layout_toLeftOf="@+id/btnNumerodecuotasprede" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="# SEGURO"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/NumSegurocredito"
+        android:layout_below="@+id/credicuota"
+        android:layout_alignRight="@+id/txtanoinicial"
+        android:layout_alignEnd="@+id/txtanoinicial"
+        android:layout_alignLeft="@+id/txtmesfinal"
+        android:layout_alignStart="@+id/txtmesfinal" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SSS"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:background="#989898"
+        android:layout_alignTop="@+id/NumSegurocredito"
+        android:layout_alignLeft="@+id/credivalu"
+        android:layout_alignStart="@+id/credivalu"
+        android:layout_alignBottom="@+id/NumSegurocredito"
+        android:layout_toLeftOf="@+id/txtmesfinal"
+        android:layout_toStartOf="@+id/txtmesfinal" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnNumerodecuotasprede"
+        android:layout_alignRight="@+id/NumSegurocredito"
+        android:layout_alignEnd="@+id/NumSegurocredito"
+        android:background="@drawable/multimedia"
+
+        android:layout_below="@+id/credivalu"
+        android:layout_toEndOf="@+id/textView5"
+        android:layout_alignBottom="@+id/credicuota"
+        android:layout_toRightOf="@+id/textView5" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtdiainicial"
+        android:hint="DÍA"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignStart="@+id/SSS"
+        android:layout_toStartOf="@+id/textView6"
+        android:layout_toLeftOf="@+id/textView6" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/txtdiafinal"
+        android:hint="DÍA"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@+id/textView6"
+        android:layout_toLeftOf="@+id/textView6"
+        android:layout_alignLeft="@+id/credidocu"
+        android:layout_alignStart="@+id/credidocu" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="MES"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:gravity="center"
+        android:id="@+id/txtmesinicial"
+        android:layout_alignTop="@+id/txtdiainicial"
+        android:layout_toLeftOf="@+id/txtanoinicial"
+        android:layout_alignLeft="@+id/NumSegurocredito"
+        android:layout_alignStart="@+id/NumSegurocredito" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtmesfinal"
+        android:hint="MES"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:gravity="center"
+        android:layout_below="@+id/textView6"
+        android:layout_toLeftOf="@+id/txtanoinicial"
+        android:layout_toStartOf="@+id/txtanoinicial" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtanoinicial"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:hint="AÑO"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_alignTop="@+id/txtmesinicial"
+        android:layout_alignRight="@+id/credidocu"
+        android:layout_alignEnd="@+id/credidocu" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:ems="10"
+        android:id="@+id/txtanofinal"
+        android:hint="AÑO"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@+id/textView6"
+        android:layout_alignRight="@+id/btnNumerodecuotasprede"
+        android:layout_alignEnd="@+id/btnNumerodecuotasprede"
+        android:layout_alignLeft="@+id/txtanoinicial"
+        android:layout_alignStart="@+id/txtanoinicial" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="FECHA INICIAL"
+        android:id="@+id/textView5"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:layout_below="@+id/NumSegurocredito"
+        android:layout_alignRight="@+id/textView6"
+        android:layout_alignEnd="@+id/textView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="FECHA FINAL"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/btnAutoFecha"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="          AutoFecha"
+        android:id="@+id/btnAutoFecha"
+        android:layout_below="@+id/txtmesinicial"
+        android:background="@drawable/button5"
+        android:layout_alignLeft="@+id/txtdiainicial"
+        android:layout_alignStart="@+id/txtdiainicial"
+        android:layout_toStartOf="@+id/txtanoinicial"
+        android:layout_alignRight="@+id/txtanoinicial"
+        android:layout_alignEnd="@+id/txtanoinicial" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tipocredi"
+        android:layout_alignTop="@+id/credivalu"
+        android:layout_alignLeft="@+id/txtanoinicial"
+        android:layout_alignStart="@+id/txtanoinicial"
+        android:layout_alignRight="@+id/credidocu"
+        android:layout_alignEnd="@+id/credidocu"
+        android:layout_above="@+id/credicuota"
+        android:background="#989898" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:text="        Agregar\n       Credito"
+        android:id="@+id/btnAddCredit"
+        android:background="@drawable/button1"
+        android:layout_below="@+id/txtdiafinal"
+        android:layout_alignLeft="@+id/txtdiafinal"
+        android:layout_alignStart="@+id/txtdiafinal"
+        android:layout_toStartOf="@+id/txtmesfinal"
+        android:layout_alignRight="@+id/txtmesfinal"
+        android:layout_alignEnd="@+id/txtmesfinal" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/Spndias"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_alignRight="@+id/btnAutoFecha"
+        android:layout_alignEnd="@+id/btnAutoFecha"
+        android:layout_alignTop="@+id/btnAddCredit"
+        android:background="#989898" />
+
+</RelativeLayout>

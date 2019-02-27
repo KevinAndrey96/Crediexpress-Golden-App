@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Valor"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/SPValorQ"
+        android:layout_below="@+id/SPPIN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="FechaLimite"
+        android:id="@+id/SPFechaQ"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/SPValorQ"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Interes"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/SPInteresQ"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/SPFechaQ"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Seguro"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/SPSeguroQ"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/SPInteresQ"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cuotas"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/SPCuotasQ"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/SPSeguroQ"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TotalCuotas"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/SPTotalQ"
+        android:layout_below="@+id/SPCuotasQ"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Estado"
+        android:id="@+id/SPEstadoQ"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/SPTotalQ"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DeudaRestante"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/SPDeudaQ"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/SPEstadoQ"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CREDITO"
+        android:textColor="#edcc49"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView11"
+        android:textColor="#ffffff"
+        android:background="#edcc49"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/SPDiasMora"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PIN"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/SPPIN"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dias Mora"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/SPDiasMora"
+        android:layout_below="@+id/SPDeudaQ"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181302">
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Recoger    \nDinero"
+        android:id="@+id/btnRecoger"
+        android:background="@drawable/button3"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Entregar      \nDinero"
+        android:id="@+id/btnEntregar"
+        android:background="@drawable/button3"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnRecoger"
+        android:layout_alignLeft="@+id/btnRecoger"
+        android:layout_alignStart="@+id/btnRecoger" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Consultar         \nDinero"
+        android:id="@+id/btnConsulta"
+        android:background="@drawable/button3"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnEntregar"
+        android:layout_alignLeft="@+id/btnEntregar"
+        android:layout_alignStart="@+id/btnEntregar" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Cobrar \nSueldo"
+        android:id="@+id/btnCobrarSueldo"
+        android:background="@drawable/button3"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnConsulta"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

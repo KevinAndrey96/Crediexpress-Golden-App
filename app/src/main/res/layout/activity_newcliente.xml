@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#000000">
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtDocumento"
+        android:hint="DOCUMENTO"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:id="@+id/txtNombres"
+        android:hint="NOMBRES"
+        android:inputType="textCapWords"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_below="@+id/txtDocumento"
+        android:layout_alignLeft="@+id/txtDocumento"
+        android:layout_alignStart="@+id/txtDocumento"
+        android:layout_alignRight="@+id/txtDocumento"
+        android:layout_alignEnd="@+id/txtDocumento" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:id="@+id/txtApellidos"
+        android:textSize="25dp"
+        android:hint="APELLIDOS"
+        android:inputType="textCapWords"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:gravity="center"
+        android:layout_below="@+id/txtAlias"
+        android:layout_alignLeft="@+id/txtAlias"
+        android:layout_alignStart="@+id/txtAlias"
+        android:layout_alignRight="@+id/txtAlias"
+        android:layout_alignEnd="@+id/txtAlias" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:id="@+id/txtDireccion"
+        android:hint="DIRECCIÓN"
+        android:inputType="textCapWords"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textSize="25dp"
+        android:layout_below="@+id/txtApellidos"
+        android:layout_alignRight="@+id/txtNombres"
+        android:layout_alignEnd="@+id/txtNombres"
+        android:layout_alignLeft="@+id/txtNombres"
+        android:layout_alignStart="@+id/txtNombres" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:hint="TELÉFONO"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:id="@+id/txtTelefono"
+        android:layout_below="@+id/txtCiudad"
+        android:layout_alignLeft="@+id/txtDireccion2"
+        android:layout_alignStart="@+id/txtDireccion2" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="# SEGURO"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:gravity="center"
+        android:id="@+id/txtNumSeguro"
+        android:layout_above="@+id/chkubik"
+        android:layout_alignRight="@+id/txtBarrio"
+        android:layout_alignEnd="@+id/txtBarrio"
+        android:layout_alignLeft="@+id/txtBarrio"
+        android:layout_alignStart="@+id/txtBarrio" />
+
+    <Spinner
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:id="@+id/Signo"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:background="#a6a6a6"
+        android:layout_below="@+id/txtTelefono"
+        android:layout_alignLeft="@+id/txtTelefono"
+        android:layout_alignStart="@+id/txtTelefono"
+        android:layout_alignRight="@+id/txtTelefono"
+        android:layout_alignEnd="@+id/txtTelefono" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="     Añadir\n     Cliente"
+        android:id="@+id/btnRegistro"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:background="@drawable/button1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:id="@+id/txtCiudad"
+        android:hint="CIUDAD"
+        android:inputType="textCapWords"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:layout_below="@+id/txtDireccion2"
+        android:layout_alignLeft="@+id/txtDireccion2"
+        android:layout_alignStart="@+id/txtDireccion2"
+        android:layout_toStartOf="@+id/txtbarrio2"
+        android:layout_alignRight="@+id/txtTelefono"
+        android:layout_alignEnd="@+id/txtTelefono" />
+
+    <EditText
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:id="@+id/txtBarrio"
+        android:hint="BARRIO"
+        android:inputType="textCapWords"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textSize="25dp"
+        android:layout_below="@+id/txtApellidos"
+        android:layout_alignLeft="@+id/txtApellidos"
+        android:layout_alignStart="@+id/txtApellidos"
+        android:layout_alignRight="@+id/txtApellidos"
+        android:layout_alignEnd="@+id/txtApellidos" />
+
+    <EditText
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:id="@+id/txtEmail"
+        android:hint="E-MAIL"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_below="@+id/txtbarrio2"
+        android:layout_alignLeft="@+id/txtBarrio"
+        android:layout_alignStart="@+id/txtBarrio"
+        android:layout_alignRight="@+id/txtbarrio2"
+        android:layout_alignEnd="@+id/txtbarrio2" />
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/btnFoto"
+        android:background="@drawable/camara"
+        android:layout_above="@+id/btnRegistro"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ImgCedula"
+        android:layout_above="@+id/btnRegistro"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/Signo" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:id="@+id/txtDireccion2"
+        android:hint="2 DIRECCIÓN"
+        android:inputType="textCapWords"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textSize="25dp"
+        android:layout_below="@+id/txtDireccion"
+        android:layout_alignLeft="@+id/txtDireccion"
+        android:layout_alignStart="@+id/txtDireccion" />
+
+    <CheckBox
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:text="UBICACIÓN"
+        android:id="@+id/chkubik"
+        android:checked="false"
+        android:textColor="#FFFFFF"
+        android:textSize="15dp"
+        android:textColorHighlight="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorLink="#ffffff"
+        android:enabled="true"
+        android:background="#a6a6a6"
+        android:layout_alignTop="@+id/Signo"
+        android:layout_alignLeft="@+id/txtNumSeguro"
+        android:layout_alignStart="@+id/txtNumSeguro" />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:id="@+id/txtAlias"
+        android:hint="ALIAS"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="165dp"
+        android:layout_height="45dp"
+        android:id="@+id/txtbarrio2"
+        android:hint="2 BARRIO"
+        android:gravity="center"
+        android:inputType="textCapWords"
+        android:layout_above="@+id/txtCiudad"
+        android:textColorHint="#ffffff"
+        android:textSize="25dp"
+        android:layout_alignRight="@+id/txtBarrio"
+        android:layout_alignEnd="@+id/txtBarrio"
+        android:layout_toEndOf="@+id/Signo"
+        android:layout_alignLeft="@+id/txtBarrio"
+        android:layout_alignStart="@+id/txtBarrio"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

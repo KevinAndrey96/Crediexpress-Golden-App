@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <Button
+        android:layout_width="385dp"
+        android:layout_height="100dp"
+        android:text="        Diario"
+        android:id="@+id/btnDiario"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:text="       Semanal"
+        android:id="@+id/btnSemanal"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button1"
+        android:layout_below="@+id/btnDiario"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="385dp"
+        android:layout_height="100dp"
+        android:text="      Mensual"
+        android:id="@+id/btnMensual"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button1"
+        android:layout_below="@+id/btnQuincenal"
+        android:layout_alignRight="@+id/btnQuincenal"
+        android:layout_alignEnd="@+id/btnQuincenal"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="385dp"
+        android:layout_height="100dp"
+        android:text="       Quincenal"
+        android:id="@+id/btnQuincenal"
+        android:background="@drawable/button1"
+        android:layout_below="@+id/btnSemanal"
+        android:layout_alignLeft="@+id/btnSemanal"
+        android:layout_alignStart="@+id/btnSemanal"
+        android:layout_alignRight="@+id/btnSemanal"
+        android:layout_alignEnd="@+id/btnSemanal"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="385dp"
+        android:layout_height="100dp"
+        android:text="            Resetear Rutas"
+        android:id="@+id/btnReset"
+        android:background="@drawable/button1"
+        android:layout_below="@+id/btnMensual"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:text="       Semanal\n       Específico"
+        android:id="@+id/btnSemanalesp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button1"
+        android:layout_above="@+id/btnQuincenal"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="385dp"
+        android:layout_height="100dp"
+        android:text="       Quincenal\n       Específico"
+        android:id="@+id/btnQuincenalesp"
+        android:background="@drawable/button1"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnSemanalesp"
+        android:layout_alignLeft="@+id/btnSemanalesp"
+        android:layout_alignStart="@+id/btnSemanalesp" />
+
+    <Button
+        android:layout_width="385dp"
+        android:layout_height="100dp"
+        android:text="       Mensual\n       Específico"
+        android:id="@+id/btnMensualesp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button1"
+        android:layout_above="@+id/btnReset"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btnQuincenalesp"
+        android:layout_alignStart="@+id/btnQuincenalesp"
+        android:textSize="20dp" />
+</RelativeLayout>

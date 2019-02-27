@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/txtDClientepago"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:hint="DOCUMENTO"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="VALOR .000"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:ems="10"
+        android:id="@+id/txtValorPago"
+        android:layout_below="@+id/txtDClientepago"
+        android:layout_alignLeft="@+id/txtDClientepago"
+        android:layout_alignStart="@+id/txtDClientepago" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="     Enviar"
+        android:id="@+id/btnEnviar"
+        android:background="@drawable/button1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="        Opciones"
+        android:id="@+id/btnopci"
+        android:layout_below="@+id/btnEnviar"
+        android:layout_alignLeft="@+id/btnEnviar"
+        android:layout_alignStart="@+id/btnEnviar"
+        android:background="@drawable/button1"
+        android:layout_marginBottom="10dp"
+        android:layout_alignRight="@+id/btnEnviar"
+        android:layout_alignEnd="@+id/btnEnviar" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="        Auto Valor"
+        android:id="@+id/btnAutoValor"
+        android:background="@drawable/button1"
+        android:layout_below="@+id/btnopci"
+        android:layout_alignRight="@+id/btnopci"
+        android:layout_alignEnd="@+id/btnopci"
+        android:layout_alignLeft="@+id/btnopci"
+        android:layout_alignStart="@+id/btnopci" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="PIN"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/txtPin"
+        android:layout_below="@+id/txtValorPago"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

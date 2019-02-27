@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView13"
+        android:src="@drawable/logo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Documento"
+        android:textSize="25dp"
+        android:id="@+id/SPDDoc"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nombres"
+        android:textSize="25dp"
+        android:id="@+id/SPDnom"
+        android:layout_below="@+id/SPDDoc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Apellidos"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:id="@+id/SPDape"
+        android:layout_below="@+id/SPDnom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Teléfono"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:id="@+id/SPDtel"
+        android:layout_below="@+id/SPDape"
+        android:layout_alignRight="@+id/SPDape"
+        android:layout_alignEnd="@+id/SPDape" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Placa"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:id="@+id/SPDpla"
+        android:layout_below="@+id/SPDtel"
+        android:layout_alignLeft="@+id/SPDtel"
+        android:layout_alignStart="@+id/SPDtel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Email"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:id="@+id/SPDema"
+        android:layout_below="@+id/SPDpla"
+        android:layout_alignLeft="@+id/SPDpla"
+        android:layout_alignStart="@+id/SPDpla" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mis transacciones hoy"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:id="@+id/SPDtran"
+        android:layout_below="@+id/SPDema"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

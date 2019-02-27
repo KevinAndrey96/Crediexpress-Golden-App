@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#000000">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:hint="TELÉFONO"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:id="@+id/txttelefononuevo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:text="      ENVIAR"
+
+        android:id="@+id/btnnuevotelefono"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button1" />
+</RelativeLayout>

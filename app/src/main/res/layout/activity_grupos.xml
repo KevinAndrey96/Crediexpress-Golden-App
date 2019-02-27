@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:id="@+id/lstgroups"
+        android:layout_above="@+id/txtnombredelgrupo"
+        android:layout_alignParentTop="true"
+        android:textColor="#FFFFFF"
+        android:background="#b99438" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="Nuevo"
+        android:id="@+id/btnNewGroup"
+        android:layout_gravity="left"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button3" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtnombredelgrupo"
+        android:layout_alignBottom="@+id/btnNewGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/btnNewGroup"
+        android:background="#000000"
+        android:layout_alignTop="@+id/btnNewGroup"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

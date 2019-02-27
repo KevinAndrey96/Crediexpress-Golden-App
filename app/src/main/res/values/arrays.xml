@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string-array name="signoszodiacales">
+            <item></item>
+            <item>Acuario</item>
+            <item>Piscis</item>
+            <item>Aries</item>
+            <item>Tauro</item>
+            <item>Geminis</item>
+            <item>Cancer</item>
+            <item>Leo</item>
+            <item>Virgo</item>
+            <item>Libra</item>
+            <item>Escorpio</item>
+            <item>Sagitario</item>
+            <item>Capricornio</item>
+        </string-array>
+    <string-array name="TipoCredito">
+        <item>Diario</item>
+        <item>Semanal</item>
+        <item>Quincenal</item>
+        <item>Mensual</item>
+    </string-array>
+    <string-array name="Campos">
+        <item>Nombres</item>
+        <item>Documento</item>
+        <item>Apellidos</item>
+        <item>Dirección</item>
+        <item>Barrio</item>
+        <item>Ciudad</item>
+        <item>Teléfono</item>
+        <item>Signo Zodiacal</item>
+        <item>Email</item>
+        <item>Moroso</item>
+        <item>Deuda</item>
+        <item>Número de seguro</item>
+        <item>Estado</item>
+        <item>Grupo</item>
+    </string-array>
+    <string-array name="Dias">
+        <item>Lunes</item>
+        <item>Martes</item>
+        <item>Miercoles</item>
+        <item>Jueves</item>
+        <item>Viernes</item>
+        <item>Sabado</item>
+        <item>Domingo</item>
+    </string-array>
+    <string-array name="Gastos">
+        <item>Otro</item>
+        <item>Plan Telefónico</item>
+        <item>Aceite Moto</item>
+        <item>Cuota Moto</item>
+        <item>Lavada Moto</item>
+    </string-array>
+</resources>

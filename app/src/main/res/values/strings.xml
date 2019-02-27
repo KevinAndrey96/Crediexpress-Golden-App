@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Crediexpress Golden App</string>
+
+    <string name="greeting">BIXOLON EXAMPLE</string>
+    <string name="ip_add">255.255.255.255</string>
+    <string name="port">0000</string>
+    <string name="bixolon1">BIXOLON</string>
+    <string name="bixolon2">"Our brand statement, \"A better solution for your business\" is derived from our key concept of our brand, \"Devotion.\" This statement approaches our customers as the Business Printing Solution Expert, while maintaining the friendliness and welcoming brand image. The brand statement logo reflects the same principle by adopting a simple and minimalist font to express clear contrast and the strong borders on the frame to visualize firm, honest, and True Expert image. BIXOLON's brand statement logo acts as an important medium to convey our corporate image, thus the logo must maintain its form and color in all cases."</string>
+
+</resources>

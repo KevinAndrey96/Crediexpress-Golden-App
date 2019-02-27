@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Destino"
+        android:id="@+id/SPDestino"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:layout_below="@+id/SPID"
+        android:layout_alignLeft="@+id/SPID"
+        android:layout_alignStart="@+id/SPID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Ciudad"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/SPCiudad"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:layout_weight="0.01"
+        android:layout_column="5"
+        android:layout_below="@+id/SPDestino"
+        android:layout_alignLeft="@+id/SPDestino"
+        android:layout_alignStart="@+id/SPDestino" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Barrio"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textSize="25sp"
+        android:id="@+id/SPBarrio"
+        android:layout_weight="0.06"
+        android:layout_column="6"
+        android:layout_below="@+id/SPCiudad"
+        android:layout_alignLeft="@+id/SPCiudad"
+        android:layout_alignStart="@+id/SPCiudad" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Direccion"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/SPDireccion"
+        android:layout_weight="0.03"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:layout_column="7"
+        android:layout_below="@+id/SPBarrio"
+        android:layout_alignLeft="@+id/SPBarrio"
+        android:layout_alignStart="@+id/SPBarrio" />
+
+    <!--
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnRealizado"
+        android:background="@drawable/marcar"
+        android:layout_alignBottom="@+id/SPEncargado"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnLlamar"
+        android:background="@drawable/telefono"
+        android:layout_alignBottom="@+id/SPEncargado"
+        android:layout_toLeftOf="@+id/btnRealizado"
+        android:layout_toStartOf="@+id/btnRealizado" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnMapa"
+        android:background="@drawable/ubicacion"
+        android:layout_alignTop="@+id/btnLlamar"
+        android:layout_toLeftOf="@+id/btnLlamar"
+        android:layout_toStartOf="@+id/btnLlamar" />
+-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ID"
+        android:textSize="25sp"
+        android:id="@+id/SPID"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TELÉFONO"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:textSize="25sp"
+        android:id="@+id/SPTel"
+        android:layout_below="@+id/SPDireccion"
+        android:layout_alignLeft="@+id/SPDireccion"
+        android:layout_alignStart="@+id/SPDireccion" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView12"
+        android:background="#73D0F4"
+        android:layout_below="@+id/SPTel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Pin"
+        android:textSize="25sp"
+        android:id="@+id/SPPinruta"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:layout_above="@+id/SPDestino"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

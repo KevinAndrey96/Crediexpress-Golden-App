@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBuscar"
+        android:hint="BUSCAR"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_below="@+id/spnCampos"
+        android:layout_marginTop="98dp"
+        android:layout_alignLeft="@+id/btnbuscando"
+        android:layout_alignStart="@+id/btnbuscando"
+        android:layout_alignRight="@+id/btnbuscando"
+        android:layout_alignEnd="@+id/btnbuscando" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="     Buscar"
+        android:id="@+id/btnbuscando"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/button1"
+        android:textColor="#ffffff"
+        android:textSize="25dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spnCampos"
+        android:color="#FFFFFF"
+        android:background="#aba898"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/btnbuscando"
+        android:layout_alignStart="@+id/btnbuscando"
+        android:layout_marginTop="63dp"
+        android:layout_alignRight="@+id/btnbuscando"
+        android:layout_alignEnd="@+id/btnbuscando" />
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#000000">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtValorGasto"
+        android:hint="TOTAL GASTO"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:inputType="numberDecimal"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:text="    ENVIAR"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColor="#000000"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+        android:id="@+id/btnEnviarGasto"
+        android:background="@drawable/button1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtGasto"
+        android:hint="NOMBRE GASTO"
+        android:textSize="25dp"
+        android:gravity="center"
+
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:textColorHint="#ffffff"
+        android:textColorHighlight="#ffffff"
+
+        android:layout_above="@+id/txtValorGasto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SPNGastos"
+        android:layout_above="@+id/txtGasto"
+        android:background="#989898"
+        android:layout_alignLeft="@+id/btnEnviarGasto"
+        android:layout_alignStart="@+id/btnEnviarGasto"
+        android:layout_alignRight="@+id/btnEnviarGasto"
+        android:layout_alignEnd="@+id/btnEnviarGasto" />
+</RelativeLayout>

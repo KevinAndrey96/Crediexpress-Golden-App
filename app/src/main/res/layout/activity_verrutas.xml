@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:weightSum="1">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="388dp"
+        android:id="@+id/ListaRutas"
+        android:layout_weight="0.24"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/TVidruta" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnMapa"
+        android:background="@drawable/ubicacion"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnLlamar"
+        android:layout_alignBottom="@+id/btnMapa"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/telefono" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btnRealizado"
+        android:layout_alignTop="@+id/btnLlamar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:background="@drawable/marcar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:hint="ID RUTA"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:id="@+id/TVidruta"
+        android:layout_above="@+id/btnMapa"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:text="ID" />
+
+</RelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#000000">
+
+
+    <Button
+
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:shape="oval"
+
+        android:text="Mis Datos"
+        android:id="@+id/btnMisDatos"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10"
+
+        android:background="@drawable/button2"
+
+        android:textColor="#FFFFFF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="75dp"
+            android:text="Ver Rutas"
+            android:id="@+id/btnVerRutas"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.10"
+
+            android:background="@drawable/button2"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/btnMisClientes"
+            android:layout_alignLeft="@+id/btnMisClientes"
+            android:layout_alignStart="@+id/btnMisClientes"
+            android:textSize="20dp" />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="75dp"
+                android:text="Añadir Pago"
+                android:id="@+id/btnpago"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.10"
+
+                android:background="@drawable/button2"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/btnVerRutas"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp" />
+
+                    <Button
+                        android:layout_width="250dp"
+                        android:layout_height="75dp"
+                        android:text="Otros Gastos"
+                        android:id="@+id/btnOtrosGastos"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.10"
+
+                        android:background="@drawable/button2"
+                        android:textColor="#FFFFFF"
+                        android:layout_below="@+id/btnpago"
+                        android:layout_alignLeft="@+id/btnpago"
+                        android:layout_alignStart="@+id/btnpago"
+                        android:textSize="20dp" />
+
+                    <Button
+                        android:layout_width="300dp"
+                        android:layout_height="80dp"
+                        android:text="          Cerrar Sesión"
+                        android:id="@+id/btnCerrarSesion"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:layout_weight="0.10"
+
+                        android:background="@drawable/button1"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/btnCaja"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:layout_width="250dp"
+                        android:layout_height="75dp"
+                        android:text="Añadir Credito"
+                        android:id="@+id/btnNewCredito"
+
+                        android:background="@drawable/button2"
+                        android:textColor="#FFFFFF"
+                        android:layout_below="@+id/btnOtrosGastos"
+                        android:layout_alignLeft="@+id/btnOtrosGastos"
+                        android:layout_alignStart="@+id/btnOtrosGastos"
+                        android:textSize="19dp" />
+
+                        <Button
+                            android:layout_width="250dp"
+                            android:layout_height="75dp"
+                            android:text="Añadir Cliente"
+                            android:id="@+id/btnNewCliente"
+                            android:background="@drawable/button2"
+                            android:textColor="#FFFFFF"
+                            android:layout_below="@+id/btnNewCredito"
+                            android:layout_alignLeft="@+id/btnNewCredito"
+                            android:layout_alignStart="@+id/btnNewCredito"
+                            android:textSize="20dp" />
+
+                        <Button
+                            android:layout_width="250dp"
+                            android:layout_height="75dp"
+                            android:text="Mis Clientes"
+                            android:id="@+id/btnMisClientes"
+                            android:background="@drawable/button2"
+                            android:textColor="#FFFFFF"
+                            android:layout_below="@+id/btnMisDatos"
+                            android:layout_alignLeft="@+id/btnMisDatos"
+                            android:layout_alignStart="@+id/btnMisDatos"
+                            android:textSize="20dp" />
+    <!--
+                         <Button
+                             android:layout_width="250dp"
+                             android:layout_height="75dp"
+                             android:text="Recordatorios"
+                             android:id="@+id/btnRecordatorio"
+                             android:layout_below="@+id/btnMisClientes"
+                             android:background="@drawable/button2"
+                             android:layout_alignRight="@+id/btnCerrarSesion"
+                             android:layout_alignEnd="@+id/btnCerrarSesion"
+                             android:layout_alignLeft="@+id/btnCerrarSesion"
+                             android:layout_alignStart="@+id/btnCerrarSesion"
+                             android:textColor="#ffffff" />
+    -->
+                      <Button
+                          android:layout_width="250dp"
+                          android:layout_height="75dp"
+                          android:text="Grupos"
+                          android:id="@+id/btnGrupos"
+                          android:background="@drawable/button2"
+                          android:textColor="#ffffff"
+                          android:layout_below="@+id/btnNewCliente"
+                          android:layout_alignLeft="@+id/btnNewCliente"
+                          android:layout_alignStart="@+id/btnNewCliente"
+                          android:textSize="20dp" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="Multas"
+        android:id="@+id/btnMultas"
+        android:layout_below="@+id/btnGrupos"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button2"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:text="Caja"
+        android:id="@+id/btnCaja"
+        android:background="@drawable/button2"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_below="@+id/btnMultas"
+        android:layout_alignLeft="@+id/btnMultas"
+        android:layout_alignStart="@+id/btnMultas" />
+
+
+</RelativeLayout>
+</ScrollView>
