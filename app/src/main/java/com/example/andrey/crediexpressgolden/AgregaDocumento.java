@@ -59,7 +59,12 @@ public class AgregaDocumento extends Activity {
     };
 
     private void getCamara(){
+        File nuevaCarpeta1 = new File(getFilesDir(), "Golden");
+        nuevaCarpeta1.mkdirs();
+        File nuevaCarpeta = new File(Environment.getExternalStorageDirectory(), "Golden");
+        nuevaCarpeta.mkdirs();
         foto = Environment.getExternalStorageDirectory() +"/Golden/" +Documento+".jpg";
+        //foto = getFilesDir() +"/Golden/" +Documento+".jpg";
         file=new File(foto);
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         output=Uri.fromFile(file);
