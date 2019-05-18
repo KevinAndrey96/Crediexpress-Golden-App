@@ -43,6 +43,7 @@ import java.util.Random;
 
 public class MisClientes extends Activity{
     private String Palabra = "";
+    ArrayList<SubjectData> arrayList = new ArrayList<SubjectData>();
     private String[] NumGrups;
     JSONParser jParser = new JSONParser();
     static Config C=new Config();
@@ -52,7 +53,7 @@ public class MisClientes extends Activity{
     private static final String TAG_MESSAGE = "message";
     private static final String TAG_SUCCESS = "success";
     private static final String TAG_PRODUCTS = "empresas";
-    private String Codeudor="No";
+    private String Codeudor="Si";
     private String DClien="";
     private String DCodeu="";
     private static final String TAG_DATO1 ="Dato1";
@@ -79,28 +80,35 @@ public class MisClientes extends Activity{
     private String campo,valor;
     JSONArray products = null;
     ListView lista;
+    ListView lista2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_misclientes);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
         if(getIntent().getExtras().getString("datos").equals("Si")) {
             campo = getIntent().getExtras().getString("Campo");
             valor = getIntent().getExtras().getString("Valor");
+            //Toast.makeText(this, "Esco: "+getIntent().getExtras().getString("esco"), Toast.LENGTH_SHORT).show();
             if(getIntent().getExtras().getString("esco").equals("Si"))
             {
                 DClien=getIntent().getExtras().getString("Clien");
                 Codeudor="Si";
+                //Toast.makeText(this, "Codeudor: "+Codeudor, Toast.LENGTH_SHORT).show();
             }
 
         }
         else
         {
+            Codeudor="No";
+            //Toast.makeText(this, "No datos, Codeudor: "+Codeudor, Toast.LENGTH_SHORT).show();
             campo="Nombres";
             valor="";
         }
         empresaList = new ArrayList<HashMap<String, String>>();
         lista = (ListView) findViewById(R.id.listademisclientes);
+        //lista2 = (ListView) findViewById(R.id.listademisclientes);
         SharedPreferences prefecorr = getSharedPreferences("Docu", Context.MODE_PRIVATE);
         Palabra = prefecorr.getString("Docu", "");
         tx=(TextView) findViewById(R.id.lblID);
@@ -238,6 +246,7 @@ JSONObject json = jsonParser.makeHttpRequest(URLENVIO, "POST", params);
                     products = json.getJSONArray(TAG_PRODUCTS);
 
                     for (int i = 0; i < products.length(); i++) {
+
                         JSONObject c = products.getJSONObject(i);
 
                         String Dato1 = c.getString(TAG_DATO1);
@@ -250,6 +259,7 @@ JSONObject json = jsonParser.makeHttpRequest(URLENVIO, "POST", params);
                         String Dato8 = c.getString(TAG_DATO8);
                         String Dato9 = c.getString(TAG_DATO9);
                         String Dato10 = c.getString(TAG_DATO10);
+                        String Dato11 = c.getString(TAG_DATO11);
 
                         HashMap map = new HashMap();
 
@@ -263,7 +273,10 @@ JSONObject json = jsonParser.makeHttpRequest(URLENVIO, "POST", params);
                         map.put(TAG_DATO8, "Moroso: "+Dato8);
                         map.put(TAG_DATO9, "Estado: "+Dato9);
                         map.put(TAG_DATO10, ""+Dato10);
+                        map.put(TAG_DATO11, ""+Dato11);
 
+                        //String CCodeudor="Si";
+                        arrayList.add(new SubjectData(Dato2+" "+Dato3, "Documento: "+ Dato1,"Dirección: "+Dato4, "Telefono: "+Dato5, "Signo & Seguro: "+ Dato6+" - "+Dato7  , Dato11, Codeudor, DClien, Dato10));
 
                         empresaList.add(map);
                     }
@@ -273,11 +286,7 @@ JSONObject json = jsonParser.makeHttpRequest(URLENVIO, "POST", params);
             }
             return null;
         }
-        private void AddCodeudor()
-        {
-            DCodeu=tx.getText().toString();
-            new Codeudor().execute();
-        }
+
         protected void onPostExecute(String file_url) {
             pDialog.dismiss();
             runOnUiThread(new Runnable() {
@@ -285,7 +294,7 @@ JSONObject json = jsonParser.makeHttpRequest(URLENVIO, "POST", params);
                     ListAdapter adapter = new SimpleAdapter(
                             MisClientes.this,
                             empresaList,
-                            R.layout.activity_spmisclientes,
+                            R.layout.activity_spclientes,
                             new String[]{
 
                                     TAG_DATO1,
@@ -297,6 +306,7 @@ JSONObject json = jsonParser.makeHttpRequest(URLENVIO, "POST", params);
                                     TAG_DATO7,
                                     TAG_DATO8,
                                     TAG_DATO9,
+                                    TAG_DATO11,
                             },
                             new int[]{
 
@@ -310,12 +320,25 @@ JSONObject json = jsonParser.makeHttpRequest(URLENVIO, "POST", params);
                                     R.id.txtSPNumeroseguroclientes,
                                     R.id.txtSPMorosoclientes,
                                     R.id.txtSPEstadoClientes,
+                                    R.id.imgCliente
                             });
 
-                    lista.setAdapter(adapter);
+
+                    final CustomAdapter customAdapter = new CustomAdapter(getApplicationContext(), arrayList);
+
+                    //lista.setAdapter(adapter);
+                    //lista2.setAdapter(adapter);
+                    lista.setOnTouchListener(null);
+                    lista.setClickable(true);
+                    lista.setLongClickable(true);
+
+
+                    lista.setAdapter(customAdapter);
+
                     lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
                             Map<String, Object> map = (Map<String, Object>) lista.getItemAtPosition(position);
                             String docu = (String) map.get("Dato1");
                             String h = docu.substring(11);
@@ -332,7 +355,14 @@ JSONObject json = jsonParser.makeHttpRequest(URLENVIO, "POST", params);
                         public boolean onItemLongClick(AdapterView<?> arg0, View v,
                                                        int index, long arg3) {
 
-                            Map<String, Object> map = (Map<String, Object>) lista.getItemAtPosition(index);
+                            String docu=customAdapter.getDocumento(index).substring(11);
+                            nombrecliente=customAdapter.getNombreCompleto(index);
+
+                            Telefono=customAdapter.getTelefono(index).substring(10);
+                            Coordenadas=customAdapter.getCoordenadas(index);
+                            Toast.makeText(MisClientes.this, ""+docu+","+nombrecliente+","+Telefono+","+Coordenadas, Toast.LENGTH_SHORT).show();
+                            //Map<String, Object> map = (Map<String, Object>) lista.getItemAtPosition(index);
+/*
 
                             String docu = (String) map.get("Dato1");
                             nombrecliente = (String) map.get("Dato2");
@@ -343,13 +373,13 @@ JSONObject json = jsonParser.makeHttpRequest(URLENVIO, "POST", params);
                             String h = docu.substring(11);
 
                             Coordenadas = (String) map.get("Dato10");
-
-                            tx.setText(h);
+*/
+                            tx.setText(docu);
 
                             FragmentManager fragmentManager = getFragmentManager();
                             DialogoSeleccion dialogo = new DialogoSeleccion();
                             dialogo.show(fragmentManager, "tagAlerta");
-                            return true;
+                        return true;
                         }
                     });
 
@@ -672,6 +702,11 @@ JSONObject json = jsonParser.makeHttpRequest(URLENVIO, "POST", params);
 
             return builder.create();
         }
+    }
+    private void AddCodeudor()
+    {
+        DCodeu=tx.getText().toString();
+        new MisClientes.Codeudor().execute();
     }
 
     class Codeudor extends AsyncTask<String, String, String> {

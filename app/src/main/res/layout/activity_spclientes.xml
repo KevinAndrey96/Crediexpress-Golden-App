@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#212121">
@@ -9,7 +11,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Kevin Andrey Herrera Silva"
-        android:id="@+id/textView21"
+        android:id="@+id/txtspcnombre"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -18,51 +20,59 @@
         android:textColor="#4CAF50" />
 
     <TextView
+        android:id="@+id/txtspcDocumento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Documento: 1032485124"
-        android:id="@+id/textView22"
-        android:layout_below="@+id/textView21"
-        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtspcnombre"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="4dp"
+        android:text="Documento: 1032485124"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#66BB6A" />
 
     <TextView
+        android:id="@+id/txtspcDireccion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Dirección: Dirección / Barrio"
-        android:id="@+id/textView23"
-        android:layout_below="@+id/textView22"
-        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtspcDocumento"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="1dp"
+        android:text="Dirección: Dirección / Barrio"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#81C784" />
 
     <TextView
+        android:id="@+id/txtspcTelefono"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Teléfono: 3185563342"
-        android:id="@+id/textView24"
-        android:layout_below="@+id/textView23"
-        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtspcDireccion"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="-2dp"
+        android:text="Teléfono: 3185563342"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#A5D6A7" />
 
     <TextView
+        android:id="@+id/txtspcSignoSeg"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Signo &amp; Seguro: Virgo - 1234"
-        android:id="@+id/textView25"
-        android:layout_below="@+id/textView24"
-        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txtspcTelefono"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginTop="2dp"
+        android:text="Signo &amp; Seguro: Virgo - 1234"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="#C8E6C9" />
 
     <TextView
@@ -74,11 +84,23 @@
         android:background="#E8F5E9"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView25"
+        android:layout_below="@+id/txtspcSignoSeg"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="5dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp" />
+
+    <ImageView
+        android:id="@+id/imgCliente"
+        android:layout_width="96dp"
+        android:layout_height="91dp"
+        android:layout_alignTop="@+id/txtspcnombre"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginRight="288dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </RelativeLayout>

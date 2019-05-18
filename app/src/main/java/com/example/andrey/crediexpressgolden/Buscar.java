@@ -28,6 +28,7 @@ public class Buscar extends Activity {
         {
             Toast.makeText(Buscar.this, "Por favor busque al codeudor a asociar", Toast.LENGTH_SHORT).show();
         }
+
         Clien=getIntent().getExtras().getString("Clien","");
         spncampos=(Spinner) findViewById(R.id.spnCampos);
         campo=(EditText) findViewById(R.id.txtBuscar);
@@ -50,6 +51,7 @@ public class Buscar extends Activity {
                 i.putExtra("Campo", spncampos.getSelectedItem().toString());
                 i.putExtra("Valor", Elcampo);
                 i.putExtra("Clien", Clien);
+                //Toast.makeText(getApplicationContext(), ""+Clien, Toast.LENGTH_LONG).show();
                 finish();
                 startActivity(i);
             }
